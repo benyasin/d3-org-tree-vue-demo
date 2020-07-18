@@ -1,0 +1,172 @@
+[
+  {
+    "nodeId": "O-1",
+    "parentNodeId": null,
+    "width": 325,
+    "height": 139,
+    "borderWidth": 1,
+    "borderRadius": 15,
+    "borderColor": {
+      "red": 15,
+      "green": 140,
+      "blue": 121,
+      "alpha": 1
+    },
+    "backgroundColor": {
+      "red": 0,
+      "green": 81,
+      "blue": 90,
+      "alpha": 1
+    },
+    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Ben</div></div>",
+    "connectorLineColor": {
+      "red": 11,
+      "green": 123,
+      "blue": 108,
+      "alpha": 1
+    },
+    "connectorLineWidth": 5,
+    "dashArray": "",
+    "expanded": true,
+    "added": false,
+    "removed": false,
+    "directSubordinates": 4,
+    "totalSubordinates": 942
+  },
+  {
+    "nodeId": "O-2",
+    "parentNodeId": "O-1",
+    "width": 319,
+    "height": 134,
+    "borderWidth": 1,
+    "borderRadius": 15,
+    "borderColor": {
+      "red": 15,
+      "green": 140,
+      "blue": 121,
+      "alpha": 1
+    },
+    "backgroundColor": {
+      "red": 0,
+      "green": 81,
+      "blue": 90,
+      "alpha": 1
+    },
+    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Honey</div></div>",
+    "connectorLineColor": {
+      "red": 11,
+      "green": 123,
+      "blue": 108,
+      "alpha": 1
+    },
+    "connectorLineWidth": 5,
+    "dashArray": "",
+    "expanded": true,
+    "added": true,
+    "removed": false,
+    "directSubordinates": 9,
+    "totalSubordinates": 383
+  },
+  {
+    "nodeId": "O-3",
+    "parentNodeId": "O-1",
+    "width": 347,
+    "height": 147,
+    "borderWidth": 1,
+    "borderRadius": 15,
+    "borderColor": {
+      "red": 15,
+      "green": 140,
+      "blue": 121,
+      "alpha": 1
+    },
+    "backgroundColor": {
+      "red": 0,
+      "green": 81,
+      "blue": 90,
+      "alpha": 1
+    },
+    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Tony</div></div>",
+    "connectorLineColor": {
+      "red": 11,
+      "green": 123,
+      "blue": 108,
+      "alpha": 1
+    },
+    "connectorLineWidth": 5,
+    "dashArray": "",
+    "expanded": true,
+    "added": false,
+    "removed": true,
+    "directSubordinates": 9,
+    "totalSubordinates": 429
+  },
+  {
+    "nodeId": "O-4",
+    "parentNodeId": "O-2",
+    "width": 347,
+    "height": 147,
+    "borderWidth": 1,
+    "borderRadius": 15,
+    "borderColor": {
+      "red": 15,
+      "green": 140,
+      "blue": 121,
+      "alpha": 1
+    },
+    "backgroundColor": {
+      "red": 0,
+      "green": 81,
+      "blue": 90,
+      "alpha": 1
+    },
+    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Lucy</div></div>",
+    "connectorLineColor": {
+      "red": 11,
+      "green": 123,
+      "blue": 108,
+      "alpha": 1
+    },
+    "connectorLineWidth": 5,
+    "dashArray": "",
+    "expanded": true,
+    "added": false,
+    "removed": true,
+    "directSubordinates": 9,
+    "totalSubordinates": 429
+  },
+  {
+    "nodeId": "O-5",
+    "parentNodeId": "O-2",
+    "width": 347,
+    "height": 147,
+    "borderWidth": 1,
+    "borderRadius": 15,
+    "borderColor": {
+      "red": 15,
+      "green": 140,
+      "blue": 121,
+      "alpha": 1
+    },
+    "backgroundColor": {
+      "red": 0,
+      "green": 81,
+      "blue": 90,
+      "alpha": 1
+    },
+    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Tom</div></div>",
+    "connectorLineColor": {
+      "red": 11,
+      "green": 123,
+      "blue": 108,
+      "alpha": 1
+    },
+    "connectorLineWidth": 5,
+    "dashArray": "",
+    "expanded": true,
+    "added": false,
+    "removed": true,
+    "directSubordinates": 9,
+    "totalSubordinates": 429
+  }
+]
