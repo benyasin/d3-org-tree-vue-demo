@@ -1,36 +1,45 @@
 <template>
-    <div id="app">
-        <Chart :data="data"/>
-    </div>
+    <v-app>
+        <v-app-bar
+                app
+                color="white"
+        >
+            <div class="d-flex align-center">
+                <v-img
+                        alt="Vuetify Logo"
+                        class="shrink mr-2"
+                        contain
+                        src="https://user-images.githubusercontent.com/1866848/87675987-a08a3000-c7aa-11ea-93f4-6e164c3b0823.png"
+                        transition="scale-transition"
+                        width="40"
+                />
+
+                <v-toolbar-title>d3-org-tree demo</v-toolbar-title>
+            </div>
+
+        </v-app-bar>
+
+        <v-main>
+            <Chart :data="data"/>
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-    import Chart from './components/Chart.vue'
+    import Chart from './components/Chart';
     import data from './data.json'
 
     export default {
         name: 'App',
+
         components: {
-            Chart
-        },
-        data() {
-            return {
-                data: null
-            };
+            Chart,
         },
         created() {
             this.data = data
-        }
-    }
+        },
+        data: () => ({
+            data: null
+        }),
+    };
 </script>
-
-<style>
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
-</style>

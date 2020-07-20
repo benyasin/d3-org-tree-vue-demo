@@ -18,7 +18,7 @@
       "blue": 90,
       "alpha": 1
     },
-    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Ben</div></div>",
+    "template": "<div class=\"domStyle\">\n<span>Ben</span></div>",
     "connectorLineColor": {
       "red": 11,
       "green": 123,
@@ -52,7 +52,7 @@
       "blue": 90,
       "alpha": 1
     },
-    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Honey</div></div>",
+    "template": "<div class=\"domStyle\"><span>Honey</span></div>",
     "connectorLineColor": {
       "red": 11,
       "green": 123,
@@ -86,7 +86,7 @@
       "blue": 90,
       "alpha": 1
     },
-    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Tony</div></div>",
+    "template": "<div class=\"domStyle\"><span>Tony</span></div>",
     "connectorLineColor": {
       "red": 11,
       "green": 123,
@@ -120,7 +120,7 @@
       "blue": 90,
       "alpha": 1
     },
-    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Lucy</div></div>",
+    "template": "<div class=\"domStyle\"><span>Lucy</span></div>",
     "connectorLineColor": {
       "red": 11,
       "green": 123,
@@ -154,7 +154,7 @@
       "blue": 90,
       "alpha": 1
     },
-    "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Tom</div></div>",
+    "template": "<div class=\"domStyle\"><span>Tom</span></div>",
     "connectorLineColor": {
       "red": 11,
       "green": 123,

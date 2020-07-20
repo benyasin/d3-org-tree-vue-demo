@@ -1,36 +1,39 @@
 <template>
-    <div>
-        <div class="btn-group">
-            <label class="title">Orientation：</label>
-            <button @click="transformLayout('top-to-bottom')">top->bottom</button>
-            <button @click="transformLayout('bottom-to-top')">bottom->top</button>
-            <button @click="transformLayout('left-to-right')">left->right</button>
-            <button @click="transformLayout('right-to-left')">right->left</button>
-        </div>
+    <v-container fluid>
+        <v-row align="center">
+            <v-col class="d-flex" cols="12" sm="6">
+                <v-select
+                        :items="orientations"
+                        v-model="orientation"
+                        item-text="value"
+                        item-value="value"
+                        label="Orientation"
+                        @change="transformLayout(orientation)"
+                        dense
+                        outlined
+                ></v-select>
+            </v-col>
+        </v-row>
         <div class="svgContainer"></div>
-    </div>
+    </v-container>
 </template>
-<style lang="css">
-    .btn-group {
-        text-align: left;
-        padding: 20px;
-    }
+<style lang="scss">
+    .domStyle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
-    .title {
-        font-weight: bold;
-        margin-right: 5%;
-    }
-
-    button {
-        margin: 0 10px;
-        border: 1px solid gainsboro;
-        padding: 3px 10px;
-        background: ghostwhite;
-        border-radius: 5px;
+        * {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 40px;
+        }
     }
 </style>
 <script>
     import OrgTree from "d3-org-tree";
+
     const d3 = require("d3")
     const fetchDataMock = () => {
         const id1 = Math.floor(Math.random() * 10 + 10)
@@ -75,7 +78,9 @@
         props: ["data"],
         data() {
             return {
-                chartReference: null
+                chartReference: null,
+                orientations: ["top-to-bottom", "bottom-to-top", "left-to-right", "right-to-left"],
+                orientation: { value: 'right-to-left'},
             };
         },
         watch: {
@@ -114,7 +119,7 @@
                         }
                     })
                     .current('O-2')
-                    .initialZoom(.4)
+                    .initialZoom(.3)
                     .onNodeClick(d => {
                         console.log(d + " node clicked")
                     })
