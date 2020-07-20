@@ -10,28 +10,18 @@
       "red": 15,
       "green": 140,
       "blue": 121,
-      "alpha": 1
+      "alpha": 0.5
     },
     "backgroundColor": {
       "red": 0,
       "green": 81,
       "blue": 90,
-      "alpha": 1
+      "alpha": 0.5
     },
     "template": "<div class=\"domStyle\">\n<span>Ben</span></div>",
-    "connectorLineColor": {
-      "red": 11,
-      "green": 123,
-      "blue": 108,
-      "alpha": 1
-    },
-    "connectorLineWidth": 5,
-    "dashArray": "",
     "expanded": true,
     "added": false,
-    "removed": false,
-    "directSubordinates": 4,
-    "totalSubordinates": 942
+    "removed": false
   },
   {
     "nodeId": "O-2",
@@ -44,28 +34,18 @@
       "red": 15,
       "green": 140,
       "blue": 121,
-      "alpha": 1
+      "alpha": 0.5
     },
     "backgroundColor": {
       "red": 0,
       "green": 81,
       "blue": 90,
-      "alpha": 1
+      "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Honey</span></div>",
-    "connectorLineColor": {
-      "red": 11,
-      "green": 123,
-      "blue": 108,
-      "alpha": 1
-    },
-    "connectorLineWidth": 5,
-    "dashArray": "",
     "expanded": true,
     "added": true,
-    "removed": false,
-    "directSubordinates": 9,
-    "totalSubordinates": 383
+    "removed": false
   },
   {
     "nodeId": "O-3",
@@ -78,23 +58,15 @@
       "red": 15,
       "green": 140,
       "blue": 121,
-      "alpha": 1
+      "alpha": 0.5
     },
     "backgroundColor": {
       "red": 0,
       "green": 81,
       "blue": 90,
-      "alpha": 1
+      "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Tony</span></div>",
-    "connectorLineColor": {
-      "red": 11,
-      "green": 123,
-      "blue": 108,
-      "alpha": 1
-    },
-    "connectorLineWidth": 5,
-    "dashArray": "",
     "expanded": true,
     "added": false,
     "removed": true,
@@ -112,28 +84,18 @@
       "red": 15,
       "green": 140,
       "blue": 121,
-      "alpha": 1
+      "alpha": 0.5
     },
     "backgroundColor": {
       "red": 0,
       "green": 81,
       "blue": 90,
-      "alpha": 1
+      "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Lucy</span></div>",
-    "connectorLineColor": {
-      "red": 11,
-      "green": 123,
-      "blue": 108,
-      "alpha": 1
-    },
-    "connectorLineWidth": 5,
-    "dashArray": "",
     "expanded": true,
     "added": false,
-    "removed": true,
-    "directSubordinates": 9,
-    "totalSubordinates": 429
+    "removed": true
   },
   {
     "nodeId": "O-5",
@@ -146,27 +108,17 @@
       "red": 15,
       "green": 140,
       "blue": 121,
-      "alpha": 1
+      "alpha": 0.5
     },
     "backgroundColor": {
       "red": 0,
       "green": 81,
       "blue": 90,
-      "alpha": 1
+      "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Tom</span></div>",
-    "connectorLineColor": {
-      "red": 11,
-      "green": 123,
-      "blue": 108,
-      "alpha": 1
-    },
-    "connectorLineWidth": 5,
-    "dashArray": "",
     "expanded": true,
     "added": false,
-    "removed": true,
-    "directSubordinates": 9,
-    "totalSubordinates": 429
+    "removed": true
   }
 ]

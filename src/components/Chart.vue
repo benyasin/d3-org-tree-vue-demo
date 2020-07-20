@@ -13,6 +13,13 @@
                         outlined
                 ></v-select>
             </v-col>
+            <v-col class="d-flex" cols="12" sm="6">
+                <v-switch
+                        @change="toggleArrow(displayArrow)"
+                        v-model="displayArrow"
+                        :label="`display arrow: ${displayArrow.toString()}`"
+                ></v-switch>
+            </v-col>
         </v-row>
         <div class="svgContainer"></div>
     </v-container>
@@ -48,28 +55,18 @@
                 "red": 15,
                 "green": 140,
                 "blue": 121,
-                "alpha": 1
+                "alpha": 0.5
             },
             "backgroundColor": {
                 "red": 0,
                 "green": 81,
                 "blue": 90,
-                "alpha": 1
+                "alpha": 0.5
             },
-            "template": "<div>\n                  <div style=\"margin-left:10px;\n                              margin-top:35px;\n                              font-size:40px;\n                              font-weight:bold;\n                         \">Jack" + id1 + "</div></div>",
-            "connectorLineColor": {
-                "red": 11,
-                "green": 123,
-                "blue": 108,
-                "alpha": 1
-            },
-            "connectorLineWidth": 5,
-            "dashArray": "",
+            "template": "<div class=\"domStyle\"><span>Tom" + id1 + " </span></div>",
             "expanded": true,
             "added": false,
             "removed": true,
-            "directSubordinates": 9,
-            "totalSubordinates": 429
         }
     }
 
@@ -80,7 +77,8 @@
             return {
                 chartReference: null,
                 orientations: ["top-to-bottom", "bottom-to-top", "left-to-right", "right-to-left"],
-                orientation: { value: 'right-to-left'},
+                orientation: {value: 'right-to-left'},
+                displayArrow: true,
             };
         },
         watch: {
@@ -118,7 +116,8 @@
                             "alpha": 1
                         }
                     })
-                    .current('O-2')
+                    //.current('O-2')
+                    .displayArrow(this.displayArrow)
                     .initialZoom(.3)
                     .onNodeClick(d => {
                         console.log(d + " node clicked")
@@ -144,6 +143,10 @@
 
             transformLayout(direction) {
                 this.chartReference.transformLayout(direction)
+            },
+
+            toggleArrow(displayArrow) {
+                this.chartReference.toggleArrow(displayArrow)
             }
         }
     }

@@ -1,6 +1,6 @@
 # d3-org-tree vue integration demo
 
-![demo](https://user-images.githubusercontent.com/1866848/87846295-74cd8e00-c901-11ea-898a-8f92f8d7605d.png)
+![tree](https://user-images.githubusercontent.com/1866848/87916163-ac753b00-caa5-11ea-936e-6243740f5cd5.png)
 
 ## Project setup
 ```
