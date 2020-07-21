@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
         <v-row align="center">
-            <v-col class="d-flex" cols="12" sm="6">
+            <v-col class="d-flex" cols="6" sm="6">
                 <v-select
                         :items="orientations"
                         v-model="orientation"
@@ -13,7 +13,23 @@
                         outlined
                 ></v-select>
             </v-col>
-            <v-col class="d-flex" cols="12" sm="6">
+        </v-row>
+        <v-row>
+            <v-col class="d-flex" cols="6" sm="6">
+                <v-select
+                        :items="straights"
+                        v-model="straight"
+                        item-text="text"
+                        item-value="value"
+                        label="Link style"
+                        @change="transformStraightLink(straight)"
+                        dense
+                        outlined
+                ></v-select>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col class="d-flex" cols="6" sm="6">
                 <v-switch
                         @change="toggleArrow(displayArrow)"
                         v-model="displayArrow"
@@ -77,8 +93,11 @@
             return {
                 chartReference: null,
                 orientations: ["top-to-bottom", "bottom-to-top", "left-to-right", "right-to-left"],
+                straights: [{text: "straight", value: true}, {text: "curve", value: false}],
                 orientation: {value: 'right-to-left'},
+                straight: {text: "curve", value: false},
                 displayArrow: true,
+                straightLink: false,
             };
         },
         watch: {
@@ -118,6 +137,7 @@
                     })
                     //.current('O-2')
                     .displayArrow(this.displayArrow)
+                    .straightLink(this.straightLink)
                     .initialZoom(.3)
                     .onNodeClick(d => {
                         console.log(d + " node clicked")
@@ -143,6 +163,10 @@
 
             transformLayout(direction) {
                 this.chartReference.transformLayout(direction)
+            },
+
+            transformStraightLink(straight) {
+                this.chartReference.transformStraightLink(straight)
             },
 
             toggleArrow(displayArrow) {
