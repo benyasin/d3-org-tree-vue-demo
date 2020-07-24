@@ -19,7 +19,7 @@
       "alpha": 0.5
     },
     "template": "<div class=\"domStyle\">\n<span>Ben</span></div>",
-    "expanded": true,
+    "expanded": false,
     "added": false,
     "removed": false
   },
@@ -45,7 +45,7 @@
     "template": "<div class=\"domStyle\"><span>Honey</span></div>",
     "expanded": true,
     "added": true,
-    "removed": false
+    "removed": true
   },
   {
     "nodeId": "O-3",
@@ -67,11 +67,9 @@
       "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Tony</span></div>",
-    "expanded": true,
+    "expanded": false,
     "added": false,
-    "removed": true,
-    "directSubordinates": 9,
-    "totalSubordinates": 429
+    "removed": false
   },
   {
     "nodeId": "O-4",
@@ -93,9 +91,9 @@
       "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Lucy</span></div>",
-    "expanded": true,
+    "expanded": false,
     "added": false,
-    "removed": true
+    "removed": false
   },
   {
     "nodeId": "O-5",
@@ -117,8 +115,8 @@
       "alpha": 0.5
     },
     "template": "<div class=\"domStyle\"><span>Tom</span></div>",
-    "expanded": true,
+    "expanded": false,
     "added": false,
-    "removed": true
+    "removed": false
   }
 ]
