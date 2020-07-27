@@ -138,6 +138,7 @@
                     //.current('O-2')
                     .displayArrow(this.displayArrow)
                     .straightLink(this.straightLink)
+                    .collapsible(false)
                     .initialZoom(.3)
                     .onNodeClick(d => {
                         console.log(d + " node clicked")
