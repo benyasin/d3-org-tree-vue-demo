@@ -119,7 +119,6 @@
                     //.svgHeight(600)
                     .data(data)
                     //.marginLeft(-50)
-                    .orientation('top-to-bottom')
                     .highlight({
                         "borderWidth": 1,
                         "borderRadius": 15,
