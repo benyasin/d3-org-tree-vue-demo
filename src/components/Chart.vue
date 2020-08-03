@@ -119,6 +119,7 @@
                     //.svgHeight(600)
                     .data(data)
                     //.marginLeft(-50)
+                    .orientation('top-to-bottom')
                     .highlight({
                         "borderWidth": 1,
                         "borderRadius": 15,
@@ -139,7 +140,6 @@
                     .displayArrow(this.displayArrow)
                     .straightLink(this.straightLink)
                     .collapsible(false)
-                    .initialZoom(.3)
                     .onNodeClick(d => {
                         console.log(d + " node clicked")
                     })
